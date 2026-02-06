@@ -1,4 +1,4 @@
-// // Question1  - count the number of vowels
+ // Question 1  - count the number of vowels
 public class CountVowels {
     public static void main(String[] args) {
         String s = "harshit";
@@ -16,10 +16,9 @@ public class CountVowels {
 
         System.out.println(count);
         System.out.println("Vowels: " + vowels);
-
     }
+    
 // question 2 - print all the elements of substring
-
 public class PrintAllElements {
     public static void main(String[] args) {
         String s = "gopi";
@@ -33,6 +32,28 @@ public class PrintAllElements {
     }
 
 }
-// // output - 
-// // g go  gop  gopi    o op opi     p  pi  i
+      // output - 
+     // g go  gop  gopi    o op opi     p  pi  i
+
+    
+// Question 3 - print sum of all substrings
+public class SumOfSubstrings {
+    public static void main(String[] args) {
+        String num = "1234";
+        int sum = 0;
+
+        for (int i = 0; i < num.length(); i++) {
+            for (int j = i; j < num.length(); j++) {
+                String sub = num.substring(i, j + 1);
+
+                int convert = Integer.parseInt(sub); // sum += Integer.parseInt(sub);
+                sum = sum + convert;
+
+            }
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
  
+
