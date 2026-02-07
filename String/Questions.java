@@ -55,5 +55,6 @@ public class SumOfSubstrings {
         System.out.println("Sum = " + sum);
     }
 }
- 
+ // output -
+
 
