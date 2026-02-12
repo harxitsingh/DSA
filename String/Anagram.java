@@ -23,10 +23,11 @@ public class Anagram {
 
     public static void main(String[] args) {
 
-        String s1 = "car";
+        String s1 = "care";
         String s2 = "race";
 
         boolean result = isAnagram(s1, s2);
         System.out.println(result); 
     }
+
 }
