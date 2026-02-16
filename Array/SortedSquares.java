@@ -1,32 +1,27 @@
-//Leetcode 977 Squares of Sorted Array
-//Approach - Brute Force
+//Leetcode question no 167 
+//Approach- Brute Force : square each element 
+
 import java.util.*;
-
 class Solution {
-    public int[] intersect(int[] nums1, int[] nums2) {
-        Arrays.sort(nums1);
-        Arrays.sort(nums2);
-
-        int i = 0, j = 0;
-        List<Integer> result = new ArrayList<>();
-
-        while (i < nums1.length && j < nums2.length) {
-            if (nums1[i] == nums2[j]) {
-                result.add(nums1[i]);
-                i++;
-                j++;
-            } else if (nums1[i] < nums2[j]) {
-                i++;
-            } else {
-                j++;
-            }
+    public int[] SortedSquares(int[]nums){
+        for(int i=0;i<nums.length;i++){
+            nums[i]=nums[i]*nums[i];
         }
-
-        int[] ans = new int[result.size()];
-        for (int k = 0; k < result.size(); k++) {
-            ans[k] = result.get(k);
-        }
-
-        return ans;
+        Arrays.sort(nums);
+        return nums;
     }
 }
+public class SortedSquares {
+    public static void main(String[] args) {
+            Solution obj = new Solution();   // Object create
+        int []nums ={-4,-1,0,3,10};
+        int[] result = obj.SortedSquares(nums);
+        System.out.println(Arrays.toString(result));
+    }
+}
+
+
+
+
+    
+
