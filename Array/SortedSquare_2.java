@@ -17,5 +17,12 @@ class Solution {
             } else {
                 result[index--] = rightSq;
                 right--;
+                       }
+        }
+
+        return result;
+    }
+}
+
 
       
