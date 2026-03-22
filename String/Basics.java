@@ -58,11 +58,9 @@ public class Basics {
         System.out.println(s.toUpperCase()); // HARSHITR
 
         //(d)s.contains()
-        System.out.println(s.contains("harsh")); // true - it checks whether the
-        string contains it (harsh) or not
+        System.out.println(s.contains("harsh")); // true - it checks whether the string contains it (harsh) or not
 
         // index of() & compareTo()
-
         String a = "raghav";
         String b = "preet";
 
@@ -106,9 +104,8 @@ public class Basics {
 
         System.out.println(su);
 
-        System.out.println(su.getClass().getName()); // java.lang.String -to findout data type of su
+        System.out.println(su.getClass().getName()); // java.lang.String -to findout data type of substring
 
-        //
 
     }
 }
